@@ -18,7 +18,7 @@ export default {
 
 <template>
   <div>
-    <button @click="increment">+</button>
+    <button class="button" @click="increment">+</button>
     <span>{{ count }}</span>
     <button @click="decrement">-</button>
   </div>

@@ -1,10 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import ReactCounter from '../components/ReactCounter.jsx'
-import SolidCounter from '../components/SolidCounter.jsx'
-import VueCounter from '../components/VueCounter.vue'
-import SvelteCounter from '../components/SvelteCounter.svelte'
+import StyledReactCounter from '../components/StyledReactCounter.jsx'
+// import StyledConstReactCounter from '../components/StyledConstReactCounter';
+// import StyledSCReactCounter from '../components/StyledSCReactCounter';
+import StyledSolidCounter from '../components/StyledSolidCounter.jsx'
+import StyledVueCounter from '../components/StyledVueCounter.vue'
+import StyledSvelteCounter from '../components/StyledSvelteCounter.svelte'
+import SvelteButton from '../components/SvelteButton.svelte';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -15,17 +18,25 @@ import SvelteCounter from '../components/SvelteCounter.svelte'
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<p>React: </p>
-		<ReactCounter client:load/>
+		<StyledReactCounter client:load/>
+		<!-- <p>React (const): </p>
+		<StyledConstReactCounter client:load/>
+		<p>React (styled-components): </p>
+		<StyledSCReactCounter client:load/> -->
 		<p>Vue: </p>
-		<VueCounter client:load/>
+		<StyledVueCounter client:load/>
 		<p>Solid: </p>
-		<SolidCounter client:load/>
+		<StyledSolidCounter client:load/>
 		<p>Svelte: </p>
-		<SvelteCounter client:load/>
+		<StyledSvelteCounter client:load/>
+		<p>Buttons: </p>
+		<SvelteButton></SvelteButton>
 	</main>
 </Layout>
 
-<style>
+<style lang="scss">
+
+
 	main {
 		margin: auto;
 		padding: 1.5rem;
