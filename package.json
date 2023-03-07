@@ -1,34 +1,46 @@
 {
-	"name": "demo-astro",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"@astrojs/react": "^2.0.2",
-		"@astrojs/solid-js": "^2.0.2",
-		"@astrojs/svelte": "^2.0.2",
-		"@astrojs/tailwind": "^3.0.1",
-		"@astrojs/vue": "^2.0.1",
-		"@types/react": "^18.0.21",
-		"@types/react-dom": "^18.0.6",
-		"astro": "^2.0.14",
-		"autoprefixer": "^10.4.13",
-		"cssnano": "^5.1.15",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
-		"solid-js": "^1.4.3",
-		"svelte": "^3.54.0",
-		"tailwindcss": "^3.0.24",
-		"vue": "^3.2.30"
-	},
-	"devDependencies": {
-		"sass": "^1.58.3",
-		"styled-components": "^5.3.6"
-	}
+  "name": "demo-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "playwright test && astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.0.2",
+    "@astrojs/solid-js": "^2.0.2",
+    "@astrojs/svelte": "^2.0.2",
+    "@astrojs/tailwind": "^3.0.1",
+    "@astrojs/vue": "^2.0.1",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^2.0.14",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.15",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "solid-js": "^1.4.3",
+    "svelte": "^3.54.0",
+    "tailwindcss": "^3.0.24",
+    "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.31.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "cypress": "^12.7.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "pixelmatch": "^5.3.0",
+    "sass": "^1.58.3",
+    "styled-components": "^5.3.6",
+    "typescript": "*"
+  }
 }

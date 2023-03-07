@@ -1,13 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import StyledReactCounter from '../components/StyledReactCounter.jsx'
+import StyledReactCounter from '../components/React/StyledReactCounter.jsx'
 // import StyledConstReactCounter from '../components/StyledConstReactCounter';
 // import StyledSCReactCounter from '../components/StyledSCReactCounter';
 import StyledSolidCounter from '../components/StyledSolidCounter.jsx'
-import StyledVueCounter from '../components/StyledVueCounter.vue'
-import StyledSvelteCounter from '../components/StyledSvelteCounter.svelte'
+import StyledVueCounter from '../components/Vue/StyledVueCounter.vue'
+import StyledSvelteCounter from '../components/Svelte/StyledSvelteCounter.svelte'
 import SvelteButton from '../components/SvelteButton.svelte';
+import TodoSvelte from '../components/Svelte/TodoSvelte.svelte';
+import TodoSolid from '../components/Solid/TodoSolid.jsx';
+import TodoVue from '../components/Vue/TodoVue.vue';
+import TodoReact from '../components/React/TodoReact.jsx';
+import FetchSvelte from '../components/Svelte/FetchSvelte.svelte';
+import FetchSolid from '../components/Solid/FetchSolid.jsx';
+import FetchVue from '../components/Vue/FetchVue.vue';
+import FetchReact from '../components/React/FetchReact.jsx';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -19,16 +27,24 @@ import SvelteButton from '../components/SvelteButton.svelte';
 		</p>
 		<p>React: </p>
 		<StyledReactCounter client:load/>
+		<FetchReact client:load/>
+		<TodoReact client:load/>
 		<!-- <p>React (const): </p>
 		<StyledConstReactCounter client:load/>
 		<p>React (styled-components): </p>
 		<StyledSCReactCounter client:load/> -->
 		<p>Vue: </p>
 		<StyledVueCounter client:load/>
+		<FetchVue client:load/>
+		<TodoVue client:load/>
 		<p>Solid: </p>
 		<StyledSolidCounter client:load/>
+		<FetchSolid client:load/>
+		<TodoSolid client:load/>	
 		<p>Svelte: </p>
 		<StyledSvelteCounter client:load/>
+		<FetchSvelte client:load/>
+		<TodoSvelte client:load/>
 		<p>Buttons: </p>
 		<SvelteButton></SvelteButton>
 	</main>

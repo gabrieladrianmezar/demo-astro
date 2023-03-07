@@ -18,6 +18,9 @@ const Button = styled.button`
   border-radius: 0.25rem;
   background-color: #eee;
   cursor: pointer;
+  &:hover {
+    background-color: #add8e6;
+  }
 `;
 
 const Span = styled.span`

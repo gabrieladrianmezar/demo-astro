@@ -12,16 +12,16 @@ function SolidCounter() {
   };
 
   return (
-    <div>
-      <button onClick={increment}>+</button>
-      <span>{count()}</span>
-      <button onClick={decrement}>-</button>
+    <div class='div'>
+      <button class='button' onClick={increment}>+</button>
+      <span class='span' >{count()}</span>
+      <button class='button' onClick={decrement}>-</button>
     </div>
   );
 }
 
 const StyledCounterStyler = `
-div {
+.div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@ div {
   font-size: 2rem;
 }
 
-button {
+.button {
   width: 2rem;
   height: 2rem;
   font-size: 1rem;
@@ -40,11 +40,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   background-color: #104a8e;
 }	
 
-span {
+.span {
   margin: 0 1rem;
 }
 `
